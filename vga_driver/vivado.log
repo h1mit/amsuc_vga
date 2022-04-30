@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Apr 30 17:07:50 2022
+# Process ID: 10364
+# Current directory: D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23888 D:\Ja\Studia\Polibuda magisterka sem.2\Amsuc\amsuc_vga\vga_project_git\amsuc_vga\vga_driver\vga_driver.xpr
+# Log file: D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vivado.log
+# Journal file: D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver'
+INFO: [Project 1-313] Project file moved from 'E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programy/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 797.266 ; gain = 220.172
+update_compile_order -fileset sources_1
+close [ open {D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/VGA_select_image.v} w ]
+add_files {{D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/VGA_select_image.v}}
+update_compile_order -fileset sources_1
+close [ open {D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v} w ]
+add_files {{D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+CRITICAL WARNING: [HDL 9-806] Syntax error near "image_smile". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/VGA_select_image.v:39]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:36]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:47]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:53]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:59]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:71]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:77]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:83]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:89]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:95]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:101]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:107]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:119]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:125]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:131]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:143]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:149]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:155]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:161]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:167]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:179]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:185]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:191]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v:201]
+[Sat Apr 30 17:44:18 2022] Launched synth_1...
+Run output will be captured here: D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Sat Apr 30 17:57:21 2022] Launched synth_1...
+Run output will be captured here: D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 30 17:59:21 2022...
