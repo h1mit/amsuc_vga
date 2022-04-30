@@ -19,7 +19,6 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module image_smile(
     input [9:0] position_x, //Position x of display
     input [9:0] position_y, // Position y of display
@@ -212,7 +211,8 @@ module image_smile(
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// color output assignments
 	// only output the colors if the counters are within the adressable video time constraints
-	assign o_red = (position_x > 144 && position_x <= 783 && position_y > 35 && position_y <= 514) ? red : 4'h0;
-	assign o_blue = (position_x > 144 && position_x <= 783 && position_y > 35 && position_y <= 514) ? blue : 4'h0;
-	assign o_green = (position_x > 144 && position_x <= 783 && position_y > 35 && position_y <= 514) ? green : 4'h0;
+	//assign Red = (h_counter_value<784 && h_counter_value>143 && v_counter_value<511 && v_counter_value>30) ? 4'hF:4'h0;
+	assign o_red = (position_x > 143 && position_x < 784 && position_y > 30 && position_y < 511) ? red : 4'h0;
+	assign o_blue = (position_x > 143 && position_x < 784 && position_y > 30 && position_y < 511) ? blue : 4'h0;
+	assign o_green = (position_x > 143 && position_x < 784 && position_y > 30 && position_y < 511) ? green : 4'h0;
 endmodule

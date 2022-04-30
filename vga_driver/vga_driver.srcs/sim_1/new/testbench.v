@@ -31,7 +31,7 @@ wire [3:0] Blue;
 main m(
     .clk(clk),
     .Hsync(Hsync),
-    .VSync(VSync),
+    .Vsync(VSync),
     .Red(Red),
     .Green(Green),
     .Blue(Blue)

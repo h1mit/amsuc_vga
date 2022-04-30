@@ -21,8 +21,9 @@
 
 module main(
     input clk,
+    input button,
     output Hsync,
-    output VSync,
+    output Vsync,
     output [3:0] Red,
     output [3:0] Green,
     output [3:0] Blue
@@ -50,11 +51,21 @@ vertical_counter VGA_vertical(
     .v_counter_value(v_counter_value)
 );
 
+VGA_select_image image(
+    .clk(clk_25),
+    .position_x(v_counter_value),
+    .position_y(h_counter_value),
+    .button(button),
+    .red(Red),
+    .green(Green),
+    .blue(Blue)
+    );
+
 assign Vsync = (v_counter_value < 2) ? 1'b1 : 1'b0;
 assign Hsync = (h_counter_value < 96) ? 1'b1 : 1'b0;
 
-assign Red = (h_counter_value<784 && h_counter_value>143 && v_counter_value<511 && v_counter_value>30) ? 4'hF:4'h0;
-assign Green = (h_counter_value<784 && h_counter_value>143 && v_counter_value<511 && v_counter_value>30) ? 4'hF:4'h0;
-assign Blue = (h_counter_value<784 && h_counter_value>143 && v_counter_value<511 && v_counter_value>30) ? 4'hF:4'h0;
+//assign Red = (h_counter_value<784 && h_counter_value>143 && v_counter_value<511 && v_counter_value>30) ? 4'hF:4'h0;
+//assign Green = (h_counter_value<784 && h_counter_value>143 && v_counter_value<511 && v_counter_value>30) ? 4'hF:4'h0;
+//assign Blue = (h_counter_value<784 && h_counter_value>143 && v_counter_value<511 && v_counter_value>30) ? 4'hF:4'h0;
 
 endmodule
