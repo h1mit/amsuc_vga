@@ -66,6 +66,12 @@ module VGA_select_image(
                 green <= smile_green;
                 blue <= smile_blue;    
             end
+            4'd1:
+            begin   
+                red <= col_red;
+                green <= col_green;
+                blue <= col_blue;  
+            end
             default:
                 counter_but = 0;
         endcase
