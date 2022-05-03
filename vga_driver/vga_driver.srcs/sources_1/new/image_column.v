@@ -35,61 +35,61 @@ input [9:0] position_x, //Position x of display
     always@(position_x or position_y)
     begin
     
-        if (position_y > 143 && position_y < 210)
+        if (position_x > 143 && position_x < 210)
         begin
             red = 4'h0;    // black
             blue = 4'h0;
             green = 4'h0;
         end
-        else if (position_y > 209 && position_y < 274)
+        else if (position_x > 209 && position_x < 274)
         begin
             red = 4'hF;    // white
             blue = 4'hF;
             green = 4'hF;
         end    
-        else if (position_y > 273 && position_y < 338)
+        else if (position_x > 273 && position_x < 338)
         begin
             red = 4'h0;    // black
             blue = 4'h0;
             green = 4'h0;
         end
-        else if (position_y > 337 && position_y < 402)
+        else if (position_x > 337 && position_x < 402)
         begin
             red = 4'hF;    // white
             blue = 4'hF;
             green = 4'hF;
         end
-        else if (position_y > 401 && position_y < 466)
+        else if (position_x > 401 && position_x < 466)
         begin
             red = 4'h0;    // black
             blue = 4'h0;
             green = 4'h0;
         end
-        else if (position_y > 465 && position_y < 530)
+        else if (position_x > 465 && position_x < 530)
         begin
             red = 4'hF;    // white
             blue = 4'hF;
             green = 4'hF;
         end
-        else if (position_y > 529 && position_y < 594)
+        else if (position_x > 529 && position_x < 594)
         begin
             red = 4'h0;    // black
             blue = 4'h0;
             green = 4'h0;
         end
-        else if (position_y > 593 && position_y < 658)
+        else if (position_x > 593 && position_x < 658)
         begin
             red = 4'hF;    // white
             blue = 4'hF;
             green = 4'hF;
         end
-        else if (position_y > 657 && position_y < 722)
+        else if (position_x > 657 && position_x < 722)
         begin
             red = 4'h0;    // black
             blue = 4'h0;
             green = 4'h0;
         end
-        else if (position_y > 721 && position_y < 786)
+        else if (position_x > 721 && position_x < 786)
         begin
             red = 4'hF;    // black
             blue = 4'hF;
