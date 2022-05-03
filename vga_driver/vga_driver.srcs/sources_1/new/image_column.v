@@ -37,82 +37,64 @@ input [9:0] position_x, //Position x of display
     
         if (position_x > 143 && position_x < 210)
         begin
-            red = 4'h0;    // black
-            blue = 4'h0;
-            green = 4'h0;
+            red = 4'hF;    // white
+            green = 4'hF;
+            blue = 4'hF;
         end
         else if (position_x > 209 && position_x < 274)
         begin
-            red = 4'hF;    // white
-            blue = 4'hF;
+            red = 4'hF;    // yellow
             green = 4'hF;
+            blue = 4'h0;
         end    
         else if (position_x > 273 && position_x < 338)
         begin
-            red = 4'h0;    // black
-            blue = 4'h0;
-            green = 4'h0;
+            red = 4'h0;    // Cyan
+            green = 4'hF;
+            blue = 4'hF;
         end
         else if (position_x > 337 && position_x < 402)
         begin
-            red = 4'hF;    // white
-            blue = 4'hF;
+            red = 4'h0;    // green
             green = 4'hF;
+            blue = 4'h0;
         end
         else if (position_x > 401 && position_x < 466)
         begin
-            red = 4'h0;    // black
-            blue = 4'h0;
+            red = 4'hf;    // pink
             green = 4'h0;
+            blue = 4'hf;
         end
         else if (position_x > 465 && position_x < 530)
         begin
-            red = 4'hF;    // white
-            blue = 4'hF;
-            green = 4'hF;
+            red = 4'hF;    // red
+            green = 4'h0;
+            blue = 4'h0;
         end
         else if (position_x > 529 && position_x < 594)
         begin
-            red = 4'h0;    // black
-            blue = 4'h0;
+            red = 4'h0;    // blue
             green = 4'h0;
+            blue = 4'hF;
         end
         else if (position_x > 593 && position_x < 658)
         begin
-            red = 4'hF;    // white
-            blue = 4'hF;
-            green = 4'hF;
+            red = 4'hF;    // orange
+            green = 4'hA;
+            blue = 4'h0;
         end
         else if (position_x > 657 && position_x < 722)
         begin
-            red = 4'h0;    // black
-            blue = 4'h0;
+            red = 4'h0;    // dark blue
             green = 4'h0;
+            blue = 4'h8;
         end
         else if (position_x > 721 && position_x < 786)
-        begin
-            red = 4'hF;    // black
-            blue = 4'hF;
-            green = 4'hF;
-        end
-        /*if (((position_y - 144) % 64 ) == 0)
-            counter_h = counter_h + 1;
-            
-        if((counter_h % 2) == 0)
-        begin
-            red = 4'h0;    // black
-            blue = 4'h0;
-            green = 4'h0;
-        end
-        else
         begin
             red = 4'hF;    // white
             blue = 4'hF;
             green = 4'hF;
         end
-        
-     if(position_x > 783)
-        counter_h = 0;*/
     end
 
 	assign o_red = (position_x > 143 && position_x < 784 && position_y > 30 && position_y < 511) ? red : 4'h0;
