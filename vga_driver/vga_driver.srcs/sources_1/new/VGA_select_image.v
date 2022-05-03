@@ -30,20 +30,33 @@ module VGA_select_image(
     output reg [3:0] blue       // Blue colour
     );
     
+    // Colours for smile
     wire [3:0] smile_red;
     wire [3:0] smile_green;
     wire [3:0] smile_blue;
     
+    // Colours for white-black columns
+    wire [3:0] col_red;
+    wire [3:0] col_green;
+    wire [3:0] col_blue;
+    
     image_smile smile(
         .position_x(position_y),
         .position_y(position_x),
-        .counter_but(button),
         .o_red(smile_red),
         .o_green(smile_green),
         .o_blue(smile_blue)
     );
+    
+    image_column column(
+        .position_x(position_x),
+        .position_y(position_y),
+        .o_red(col_red),
+        .o_green(col_green),
+        .o_blue(col_blue)
+    );
                 
-    reg [3:0] counter_but = 0;
+    reg [3:0] counter_but = 1;
     always@(posedge clk)
     begin
         case(counter_but)

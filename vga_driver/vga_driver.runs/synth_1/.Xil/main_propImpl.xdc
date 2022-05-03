@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/constrs_1/new/vga.xdc} rfile:../../../vga_driver.srcs/constrs_1/new/vga.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.srcs/constrs_1/new/vga.xdc} rfile:../../../vga_driver.srcs/constrs_1/new/vga.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN E3 [get_ports clk]
 set_property src_info {type:XDC file:1 line:16 export:INPUT save:INPUT read:READ} [current_design]

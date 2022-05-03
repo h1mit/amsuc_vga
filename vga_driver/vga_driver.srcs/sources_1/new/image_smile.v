@@ -22,7 +22,6 @@
 module image_smile(
     input [9:0] position_x, //Position x of display
     input [9:0] position_y, // Position y of display
-    input [3:0] counter_but,  // Selected of image
     output [3:0] o_red,       // red colour
     output [3:0] o_green,     // Green colour
     output [3:0] o_blue       // Blue colour
@@ -31,7 +30,7 @@ module image_smile(
     reg [3:0] red;       // red colour
     reg [3:0] green;     // Green colour
     reg [3:0] blue;       // Blue colour
-    always@(position_x or position_y or counter_but)
+    always@(position_x or position_y)
     begin
         if(position_y < 135) begin              
             red = 4'hF;    // white

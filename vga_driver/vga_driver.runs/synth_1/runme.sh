@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=D:/Xilinx/SDK/2018.3/bin;D:/Xilinx/Vivado/2018.3/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2018.3/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2018.3/bin
+  PATH=D:/Programy/SDK/2018.3/bin;D:/Programy/Vivado/2018.3/ids_lite/ISE/bin/nt64;D:/Programy/Vivado/2018.3/ids_lite/ISE/lib/nt64:D:/Programy/Vivado/2018.3/bin
 else
-  PATH=D:/Xilinx/SDK/2018.3/bin;D:/Xilinx/Vivado/2018.3/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2018.3/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2018.3/bin:$PATH
+  PATH=D:/Programy/SDK/2018.3/bin;D:/Programy/Vivado/2018.3/ids_lite/ISE/bin/nt64;D:/Programy/Vivado/2018.3/ids_lite/ISE/lib/nt64:D:/Programy/Vivado/2018.3/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.runs/synth_1'
+HD_PWD='D:/Ja/Studia/Polibuda magisterka sem.2/Amsuc/amsuc_vga/vga_project_git/amsuc_vga/vga_driver/vga_driver.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
