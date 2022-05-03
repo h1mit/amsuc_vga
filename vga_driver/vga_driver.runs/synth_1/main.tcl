@@ -17,9 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -35,6 +32,8 @@ set_property ip_output_repo {e:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Sem
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   {E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/VGA_select_image.v}
+  {E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/counter.v}
+  {E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/debouncer.v}
   {E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/horizontal_counter.v}
   {E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v}
   {E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/vertical_counter.v}
