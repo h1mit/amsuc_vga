@@ -21,10 +21,10 @@
 
 
 module VGA_select_image(
-    input clk,      //System clock
-    input [9:0] position_x, //Position x of display
-    input [9:0] position_y, // Position y of display
-    input  button,  // Selected of image
+    input clk,                  //System clock
+    input [9:0] position_x,     //Position x of display
+    input [9:0] position_y,     // Position y of display
+    input  button,              // Selected of image
     output reg [3:0] red,       // red colour
     output reg [3:0] green,     // Green colour
     output reg [3:0] blue       // Blue colour
@@ -41,8 +41,8 @@ module VGA_select_image(
     wire [3:0] col_blue;
     
     image_smile smile(
-        .position_x(position_y),
-        .position_y(position_x),
+        .position_x(position_x),
+        .position_y(position_y),
         .o_red(smile_red),
         .o_green(smile_green),
         .o_blue(smile_blue)
@@ -56,9 +56,11 @@ module VGA_select_image(
         .o_blue(col_blue)
     );
                 
-    reg [3:0] counter_but = 1;
-    always@(posedge clk)
-    begin
+    reg [3:0] counter_but;
+    
+    always@(posedge clk or posedge button) begin
+        if(button)
+            counter_but <= counter_but + 1;            
         case(counter_but)
             4'd0:
             begin 
@@ -72,8 +74,20 @@ module VGA_select_image(
                 green <= col_green;
                 blue <= col_blue;  
             end
+            4'd2:
+            begin   
+                red <= col_red;
+                green <= col_green;
+                blue <= col_blue;  
+            end
+            4'd3:
+            begin   
+                red <= col_red;
+                green <= col_green;
+                blue <= col_blue;  
+            end
             default:
-                counter_but = 0;
+                counter_but <= 0;
         endcase
     end
 endmodule

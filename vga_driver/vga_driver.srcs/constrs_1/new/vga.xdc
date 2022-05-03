@@ -31,4 +31,9 @@ set_property PACKAGE_PIN A6 [get_ports {Green[3]}]
 set_property PACKAGE_PIN D7 [get_ports {Blue[2]}]
 set_property PACKAGE_PIN D8 [get_ports {Blue[3]}]
 
-set_property PACKAGE_PIN P17 [get_ports button]
+set_property PACKAGE_PIN P18 [get_ports button]
+
+set_property IOSTANDARD LVCMOS18 [get_ports button]
+
+set_property PACKAGE_PIN H17 [get_ports diode]
+set_property IOSTANDARD LVCMOS18 [get_ports diode]

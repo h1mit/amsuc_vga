@@ -9,7 +9,7 @@ module debouncer(
     reg [3:0] register;
     
     counter #(.N(99999)) C(                                     //counter 1KHz                                     
-        .CLK(CLK),
+        .CLK(clk),
         .CEO(CE)
     );
     
@@ -17,6 +17,6 @@ module debouncer(
         if(CE)
             register <= {register[2:0], button};
     end
-    assign button_impuls = (&register[2:0]) & ~register[3];     //generate impulse indicating button press
-
+    assign button_impuls = (&register[2:0]) & ~register[3] & CE;     //generate impulse indicating button press
+//    assign button_impuls = (&register[3:0]);
 endmodule

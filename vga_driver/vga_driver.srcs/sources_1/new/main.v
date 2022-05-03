@@ -7,7 +7,8 @@ module main(
     output Vsync,
     output [3:0] Red,
     output [3:0] Green,
-    output [3:0] Blue
+    output [3:0] Blue,
+    output diode
     );
 
 wire clk_25;
@@ -41,8 +42,8 @@ debouncer deb(                          //Debouncer for button
 
 VGA_select_image image(                 //Image selection module
     .clk(clk_25),
-    .position_x(v_counter_value),
-    .position_y(h_counter_value),
+    .position_x(h_counter_value),
+    .position_y(v_counter_value),
     .button(button_impuls),
     .red(Red),
     .green(Green),
@@ -51,5 +52,6 @@ VGA_select_image image(                 //Image selection module
 
 assign Vsync = (v_counter_value < 2) ? 1'b1 : 1'b0;     //Vertical synchronization
 assign Hsync = (h_counter_value < 96) ? 1'b1 : 1'b0;    //Horizontal synchronization
+assign diode = button_impuls;
 
 endmodule
