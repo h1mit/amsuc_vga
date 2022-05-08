@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Sun May  8 14:25:38 2022
+| Date         : Sun May  8 19:52:10 2022
 | Host         : DESKTOP-URQI8F5 running 64-bit major release  (build 9200)
 | Command      : report_drc -file main_drc_opted.rpt -pb main_drc_opted.pb -rpx main_drc_opted.rpx
 | Design       : main
@@ -49,8 +49,8 @@ Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT deb/counter_but[0]_i_2 is driving clock pin of 1 cells. This could lead to large hold time violations. Involved cells are:
-image/counter_but_reg[0]
+A LUT deb/counter_but[2]_i_2 is driving clock pin of 3 cells. This could lead to large hold time violations. Involved cells are:
+image/counter_but_reg[0], image/counter_but_reg[1], image/counter_but_reg[2]
 Related violations: <none>
 
 

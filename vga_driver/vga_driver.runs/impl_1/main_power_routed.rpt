@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Sun May  8 14:26:16 2022
+| Date             : Sun May  8 19:52:50 2022
 | Host             : DESKTOP-URQI8F5 running 64-bit major release  (build 9200)
 | Command          : report_power -file main_power_routed.rpt -pb main_power_summary_routed.pb -rpx main_power_routed.rpx
 | Design           : main
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.209        |
+| Total On-Chip Power (W)  | 0.210        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.117        |
+| Dynamic (W)              | 0.119        |
 | Device Static (W)        | 0.091        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.0         |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        5 |       --- |             --- |
-| Slice Logic    |    <0.001 |      156 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       75 |     63400 |            0.12 |
-|   Register     |    <0.001 |       45 |    126800 |            0.04 |
+| Slice Logic    |    <0.001 |      171 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       90 |     63400 |            0.14 |
+|   Register     |    <0.001 |       47 |    126800 |            0.04 |
 |   Others       |     0.000 |       13 |       --- |             --- |
-| Signals        |    <0.001 |      121 |       --- |             --- |
+| Signals        |    <0.001 |      140 |       --- |             --- |
 | MMCM           |     0.116 |        1 |         6 |           16.67 |
-| I/O            |    <0.001 |       16 |       210 |            7.62 |
+| I/O            |     0.002 |       16 |       210 |            7.62 |
 | Static Power   |     0.091 |          |           |                 |
-| Total          |     0.209 |          |           |                 |
+| Total          |     0.210 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,11 +71,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.016 |       0.001 |      0.015 |
+| Vccint    |       1.000 |     0.017 |       0.001 |      0.015 |
 | Vccaux    |       1.800 |     0.083 |       0.064 |      0.018 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     0.004 |       0.000 |      0.004 |
+| Vcco18    |       1.800 |     0.005 |       0.001 |      0.004 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
@@ -142,7 +142,7 @@ Table of Contents
 +-------------+-----------+
 | Name        | Power (W) |
 +-------------+-----------+
-| main        |     0.117 |
+| main        |     0.119 |
 |   VGA_Clock |     0.116 |
 |     inst    |     0.116 |
 +-------------+-----------+

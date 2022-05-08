@@ -38,6 +38,10 @@ read_verilog -library xil_defaultlib {
   {E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/horizontal_counter.v}
   {E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_column.v}
   {E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_smile.v}
+  {E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/lt_down_rect.v}
+  {E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/lt_top_rect.v}
+  {E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/rt_down_rect.v}
+  {E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/rt_up_rect.v}
   {E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/vertical_counter.v}
   {E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/main.v}
 }

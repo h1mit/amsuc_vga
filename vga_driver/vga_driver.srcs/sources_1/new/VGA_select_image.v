@@ -104,7 +104,7 @@ module VGA_select_image(
     reg [3:0] counter_but = 0;
     
     always@(posedge button) begin   // Push button operation       
-        if(counter_but < 1)
+        if(counter_but < 5)
             counter_but <= counter_but + 1;
         else
             counter_but <= 0;

@@ -8,7 +8,7 @@ module vertical_counter(
     
     always @(posedge clk_25MHz) begin
         if(enable_v_counter == 1'b1) begin
-            if(v_counter_value < 521)
+            if(v_counter_value < 520)
                 v_counter_value <= v_counter_value+1;
             else 
                 v_counter_value <= 0;

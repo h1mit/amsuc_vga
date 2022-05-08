@@ -23,14 +23,14 @@
 module rt_up_rect(
     input [9:0] position_x, //Position x of display
     input [9:0] position_y, // Position y of display
-    output [3:0] o_red,       // red colour
-    output [3:0] o_green,     // Green colour
-    output [3:0] o_blue       // Blue colour
+    output [3:0] o_red,     // Red colour
+    output [3:0] o_green,   // Green colour
+    output [3:0] o_blue     // Blue colour
     );
     
-    reg [3:0] red;       // red colour
-    reg [3:0] green;     // Green colour
-    reg [3:0] blue;       // Blue colour
+    reg [3:0] red;      // Red colour
+    reg [3:0] green;    // Green colour
+    reg [3:0] blue;     // Blue colour
     reg [3:0] counter_h = 0;
     always@(position_x or position_y)
     begin
