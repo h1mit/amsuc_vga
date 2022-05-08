@@ -33,3 +33,5 @@ set_property src_info {type:XDC file:1 line:34 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN P18 [get_ports button]
 set_property src_info {type:XDC file:1 line:38 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN H17 [get_ports diode]
+set_property src_info {type:XDC file:1 line:39 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS18 [get_ports diode]

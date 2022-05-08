@@ -33,7 +33,7 @@ set_property ip_output_repo {e:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Sem
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   {E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/VGA_select_image.v}
-  {E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/counter.v}
+  {E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/blank_screen.v}
   {E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/debouncer.v}
   {E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/horizontal_counter.v}
   {E:/Mateusz/Studia/E-Learning/Teleinformatyka S2/Semestr 2/AMSUC_PROJEKT/amsuc_vga/vga_driver/vga_driver.srcs/sources_1/new/image_column.v}

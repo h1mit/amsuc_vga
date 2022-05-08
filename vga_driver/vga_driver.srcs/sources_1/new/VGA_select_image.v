@@ -1,31 +1,11 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 30.04.2022 17:28:57
-// Design Name: 
-// Module Name: VGA_select_image
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module VGA_select_image(
-    input clk,                  //System clock
-    input [9:0] position_x,     //Position x of display
+    input clk,                  // Clock 25MHz
+    input [9:0] position_x,     // Position x of display
     input [9:0] position_y,     // Position y of display
-    input  button,              // Selected of image
-    output reg [3:0] red,       // red colour
+    input  button,              // Selected image
+    output reg [3:0] red,       // Red colour
     output reg [3:0] green,     // Green colour
     output reg [3:0] blue       // Blue colour
     );
@@ -39,6 +19,11 @@ module VGA_select_image(
     wire [3:0] col_red;
     wire [3:0] col_green;
     wire [3:0] col_blue;
+    
+    // Colours for blank screen (case default)
+    wire [3:0] blank_red;
+    wire [3:0] blank_green;
+    wire [3:0] blank_blue;
     
     image_smile smile(
         .position_x(position_x),
@@ -55,39 +40,44 @@ module VGA_select_image(
         .o_green(col_green),
         .o_blue(col_blue)
     );
-                
-    reg [3:0] counter_but;
     
-    always@(posedge clk or posedge button) begin
-        if(button)
-            counter_but <= counter_but + 1;            
+    blank_screen blank(
+        .position_x(position_x),
+        .position_y(position_y),
+        .o_red(blank_red),
+        .o_green(blank_green),
+        .o_blue(blank_blue)
+    );
+                
+    reg [3:0] counter_but = 0;
+    
+    always@(posedge button) begin   // Push button operation       
+        if(counter_but < 1)
+            counter_but <= counter_but + 1;
+        else
+            counter_but <= 0;
+    end
+       
+    always@(posedge clk) begin      // Display images according to number of button presses                
         case(counter_but)
             4'd0:
-            begin 
+            begin  
                 red <= smile_red;
                 green <= smile_green;
-                blue <= smile_blue;    
+                blue <= smile_blue;  
             end
             4'd1:
-            begin   
+            begin
                 red <= col_red;
                 green <= col_green;
-                blue <= col_blue;  
+                blue <= col_blue;         
             end
-            4'd2:
-            begin   
-                red <= col_red;
-                green <= col_green;
-                blue <= col_blue;  
+            default:                // Shouldn't happened, but if counter didn't reset display white screen
+            begin
+                red <= blank_red;
+                green <= blank_green;
+                blue <= blank_blue;
             end
-            4'd3:
-            begin   
-                red <= col_red;
-                green <= col_green;
-                blue <= col_blue;  
-            end
-            default:
-                counter_but <= 0;
         endcase
     end
 endmodule

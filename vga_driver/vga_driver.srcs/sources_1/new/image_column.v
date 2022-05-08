@@ -21,7 +21,7 @@
 
 
 module image_column(
-input [9:0] position_x, //Position x of display
+    input [9:0] position_x, //Position x of display
     input [9:0] position_y, // Position y of display
     output [3:0] o_red,       // red colour
     output [3:0] o_green,     // Green colour
